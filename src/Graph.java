@@ -6,7 +6,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 /**
- * Created by Tobias Lory on 28.10.2015.
+ * Created by ltlts on 28.10.2015.
  */
 public class Graph {
     private Knoten[] _knoten;
