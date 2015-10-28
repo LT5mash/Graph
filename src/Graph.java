@@ -21,13 +21,13 @@ public class Graph {
             _knoten = new Knoten[knoten];
             _nachbarn = new ArrayList[knoten];
             for (int i=0;i<knoten;++i)
-                _nachbarn[i]=new ArrayList<Knoten>();
+                _nachbarn[i]= new ArrayList<>();
             inputStream.nextLine();
             _kanten = new Kante[inputStream.nextInt()];
             inputStream.nextLine();
             inputStream.nextLine();
             for (int i = 0; i < _knoten.length; ++i)
-                _knoten[i] = new Knoten(inputStream.next(), inputStream.nextDouble(), inputStream.nextDouble());
+                _knoten[i] = new Knoten(inputStream.next(), Double.parseDouble(inputStream.next()), Double.parseDouble(inputStream.next()));
             for (int i = 0; i < _kanten.length; ++i) {
                 String name = inputStream.next();
                 String von = inputStream.next();
@@ -88,7 +88,7 @@ public class Graph {
         String s = "Knoten:";
         for (int i = 0; i < nKnoten(); ++i)
             s += " " + _knoten[i].toString();
-        s += "\n Kanten:";
+        s += "\nKanten:";
         for (int i = 0; i < nKanten(); ++i)
             s += "\n" + _kanten[i].toString();
         return s;
