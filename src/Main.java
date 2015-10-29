@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Created by ltlts on 28.10.2015.
+ * Created by Tobias&Felix on 28.10.2015.
  */
 public class Main {
     public static void main(String[] args) throws IOException {
