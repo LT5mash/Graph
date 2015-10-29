@@ -7,6 +7,7 @@ public class Kante {
     private String _name;
     private int _gewicht;
 
+    // Konstruktor mit Knotengewichtung
     public Kante(String name, Knoten von, Knoten nach, int gewicht) {
         _name=name;
         _von=von;
@@ -14,6 +15,10 @@ public class Kante {
         _gewicht=gewicht;
     }
 
+    // Konstruktor ohne Knotengewichtung (gewicht = 1)
+    public Kante(String name, Knoten von, Knoten nach) {
+        this (name, von, nach, 1);
+    }
 
     @Override
     public String toString() {
